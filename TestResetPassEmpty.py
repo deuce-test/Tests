@@ -5,8 +5,8 @@ from selenium import webdriver
 from test_support.pages import MainPageLocators, MainPage
 
 
-class ResetPassShort(unittest.TestCase):
-    """A sample test class to show that long enough passwords are required during password resetting"""
+class ResetPassEmpty(unittest.TestCase):
+    """ A sample test class to show that non-empty passwords are required during password resetting """
 
     def setUp(self):
         self.driver = webdriver.Firefox()
@@ -14,10 +14,8 @@ class ResetPassShort(unittest.TestCase):
         self.driver.get("https://news360.com/#~ffb82714-3715-4f9e-8c45-db6aadc439e9") # This link is to be replaced when corresponding link obtaining mechanism is to be created.
 
 
-    def test_reset_password(self):
-        """
-        Tests that passwords provided by user should be long enough
-        """
+    def test_empty_reset_password(self):
+        """ Test ResetPassEmpty checks that user can't use empty password during resetting """
         main_page = MainPage(self.driver)
         main_page.set_credential('', *MainPageLocators.NEW_PASSWORD)
         main_page.set_credential('', *MainPageLocators.CONFIRM_PASSWORD)

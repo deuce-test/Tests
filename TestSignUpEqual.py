@@ -13,8 +13,8 @@ class SignUpEqual(unittest.TestCase):
         self.driver.get("https://news360.com/")
         self.driver.implicitly_wait(10)
 
-    def test_short_password_signup(self):
-        """ Tests unconfirmed password processing during sign up """
+    def test_password_signup_equal(self):
+        """ Test SignUpEqual checks password confirmation mechanism during sign up """
         main_page = MainPage(self.driver)
         main_page.click_signin_link()
         main_page.click_signup_link()

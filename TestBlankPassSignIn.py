@@ -13,8 +13,8 @@ class BlankPassSignIN(unittest.TestCase):
         self.driver.get("https://news360.com/")
         self.driver.implicitly_wait(10)
 
-    def test_blank_signin(self):
-        """ Tests normal signin with empty password  """
+    def test_blank_pass_signin(self):
+        """ Test BlankPassSignIN checks sign in with empty password """
         main_page = pages.MainPage(self.driver)
         main_page.click_signin_link()
         main_page.set_email('asd@asd.il')

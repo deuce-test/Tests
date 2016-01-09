@@ -14,7 +14,7 @@ class CancelSignIN(unittest.TestCase):
         self.driver.implicitly_wait(10)
 
     def test_cancel_signin(self):
-        """ Tests Cancel button  """
+        """ Test CancelSignIN checks Cancel button """
         main_page = MainPage(self.driver)
         main_page.click_signin_link()
         main_page.set_email('asd@asd.il')

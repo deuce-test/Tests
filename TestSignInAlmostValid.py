@@ -6,17 +6,15 @@ from test_support import pages
 
 
 class SignInAlmostValid(unittest.TestCase):
-    """A sample test class to show how page object works"""
+    """ A sample test class to test inability to use someone else's password to sign in """
 
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.get("https://news360.com/")
         self.driver.implicitly_wait(10)
 
-    def test_normal_signin(self):
-        """
-        Tests normal signin
-        """
+    def test_almost_normal_signin(self):
+        """ Test SignInAlmostValid checks that user can't use someone else's password during sign in """
         main_page = pages.MainPage(self.driver)
         main_page.click_signin_link()
         main_page.set_email('asd@asd.il')

@@ -6,7 +6,7 @@ from test_support.pages import MainPage, MainPageLocators
 
 
 class LogInLink(unittest.TestCase):
-    """A sample test class to show how 'Log in' link works"""
+    """ A sample test class to show how 'Log in' link works """
 
     def setUp(self):
         self.driver = webdriver.Firefox()
@@ -15,7 +15,7 @@ class LogInLink(unittest.TestCase):
 
 
     def test_login_link(self):
-        """        Tests 'Log in' link        """
+        """ Test LogInLink checks 'Log in' link functionality """
         main_page = MainPage(self.driver)
         main_page.click_signin_link()
         main_page.click_signup_link()

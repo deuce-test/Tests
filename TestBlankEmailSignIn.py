@@ -6,15 +6,15 @@ from test_support import pages
 
 
 class BlankEmailSignIN(unittest.TestCase):
-    """   Test that check impossibility to sign in with empty email    """
+    """ Test that check impossibility to sign in with empty email """
 
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.get("https://news360.com/")
         self.driver.implicitly_wait(10)
 
-    def test_blank_signin(self):
-        """ Tests normal signin with empty email  """
+    def test_blank_email_signin(self):
+        """ Test BlankEmailSignIN checks sign in with empty email """
         main_page = pages.MainPage(self.driver)
         main_page.click_signin_link()
         main_page.set_email('')

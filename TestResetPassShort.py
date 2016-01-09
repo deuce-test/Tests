@@ -14,10 +14,8 @@ class ResetPassShort(unittest.TestCase):
         self.driver.get("https://news360.com/#~ffb82714-3715-4f9e-8c45-db6aadc439e9") # This link is to be replaced when corresponding link obtaining mechanism is to be created.
 
 
-    def test_reset_password(self):
-        """
-        Tests that passwords provided by user should be long enough
-        """
+    def test_reset_password_short(self):
+        """ Test ResetPassShort checks that passwords provided by user should be long enough """
         main_page = MainPage(self.driver)
         main_page.set_credential('555', *MainPageLocators.NEW_PASSWORD)
         main_page.set_credential('555', *MainPageLocators.CONFIRM_PASSWORD)

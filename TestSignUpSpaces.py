@@ -6,7 +6,7 @@ from test_support.pages import MainPageLocators, MainPage
 
 
 class SignUpSpaces(unittest.TestCase):
-    """   Test that check that user can sign up with password containing only spaces    """
+    """ Test that check that user can't sign up with password containing only spaces """
 
     def setUp(self):
         self.driver = webdriver.Firefox()
@@ -14,7 +14,7 @@ class SignUpSpaces(unittest.TestCase):
         self.driver.implicitly_wait(10)
 
     def test_spaces_signup(self):
-        """ Tests incorrect password processing during sign up """
+        """ Test SignUpSpaces checks that password containing only space characters can't be used in sign up """
         main_page = MainPage(self.driver)
         main_page.click_signin_link()
         main_page.click_signup_link()

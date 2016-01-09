@@ -4,15 +4,15 @@ from test_support.pages import MainPageLocators, MainPage, DashboardLocators
 
 
 class SignUpNormal(unittest.TestCase):
-    """   Test that check that user can sign up with correct login and password    """
+    """ Test that check that user can sign up with correct login and password """
 
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.get("https://news360.com/")
         self.driver.implicitly_wait(10)
 
-    def test_cancel_signin(self):
-        """ Tests normal sign up """
+    def test_signup_normal(self):
+        """ Test SignUpNormal checks sign up with valid credentials """
         main_page = MainPage(self.driver)
         main_page.click_signin_link()
         main_page.click_signup_link()

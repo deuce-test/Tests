@@ -6,15 +6,15 @@ from test_support.pages import MainPageLocators, MainPage
 
 
 class SignUpInvalidEmail(unittest.TestCase):
-    """   Test that check that user can't sign up with incorrect email    """
+    """ Test that check that user can't sign up with incorrect email """
 
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.get("https://news360.com/")
         self.driver.implicitly_wait(10)
 
-    def test_invalid_email_signin(self):
-        """ Tests incorrect email processing during sign up """
+    def test_invalid_email_signup(self):
+        """ Test SignUpInvalidEmail checks incorrect email processing during sign up """
         main_page = MainPage(self.driver)
         main_page.click_signin_link()
         main_page.click_signup_link()

@@ -14,7 +14,7 @@ class BlankSignIN(unittest.TestCase):
         self.driver.implicitly_wait(10)
 
     def test_blank_signin(self):
-        """ Tests normal signin with empty email and password  """
+        """ Test BlankSignIN checks sign in with empty email and password  """
         main_page = pages.MainPage(self.driver)
         main_page.click_signin_link()
         main_page.set_email('')

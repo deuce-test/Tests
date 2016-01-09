@@ -6,7 +6,7 @@ from test_support.pages import MainPageLocators, MainPage
 
 
 class SignUpShort(unittest.TestCase):
-    """   Test that check that user can't sign up with incorrect email    """
+    """ Test that check that user can't sign up with not long enough password """
 
     def setUp(self):
         self.driver = webdriver.Firefox()
@@ -14,7 +14,7 @@ class SignUpShort(unittest.TestCase):
         self.driver.implicitly_wait(10)
 
     def test_short_password_signup(self):
-        """ Tests incorrect email processing during sign up """
+        """ Test SignUpShort checks that user can't sign up with not long enough password """
         main_page = MainPage(self.driver)
         main_page.click_signin_link()
         main_page.click_signup_link()

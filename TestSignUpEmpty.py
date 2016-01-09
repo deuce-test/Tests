@@ -6,7 +6,7 @@ from test_support.pages import MainPageLocators, MainPage
 
 
 class SignUpEmpty(unittest.TestCase):
-    """   Test that check that user can sign up with empty password    """
+    """   Test that checks that user can sign up with empty password    """
 
     def setUp(self):
         self.driver = webdriver.Firefox()
@@ -14,7 +14,7 @@ class SignUpEmpty(unittest.TestCase):
         self.driver.implicitly_wait(10)
 
     def test_empty_signup(self):
-        """ Tests empty password processing during sign up """
+        """ Test SignUpEmpty checks empty password processing during sign up """
         main_page = MainPage(self.driver)
         main_page.click_signin_link()
         main_page.click_signup_link()

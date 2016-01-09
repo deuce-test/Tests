@@ -6,7 +6,7 @@ from test_support.pages import MainPage, MainPageLocators
 
 
 class ForgotPasswordLink(unittest.TestCase):
-    """A sample test class to show how 'Forgot your password' link UI works"""
+    """ A sample test class to show how 'Forgot your password' link UI works """
 
     def setUp(self):
         self.driver = webdriver.Firefox()
@@ -15,9 +15,7 @@ class ForgotPasswordLink(unittest.TestCase):
 
 
     def test_forgot_pass_link(self):
-        """
-        Tests 'Forgot your password' link UI
-        """
+        """ Test ForgotPasswordLink checks 'Forgot your password' link UI """
         main_page = MainPage(self.driver)
         main_page.click_signin_link()
         main_page.click_forgot_pass_link()
