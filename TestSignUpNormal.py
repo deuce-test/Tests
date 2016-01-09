@@ -1,7 +1,5 @@
 import unittest
-
 from selenium import webdriver
-
 from test_support.pages import MainPageLocators, MainPage, DashboardLocators
 
 
