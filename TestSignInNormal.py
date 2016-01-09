@@ -11,7 +11,7 @@ class SignInNormal(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.get("https://news360.com/")
-        self.driver.implicitly_wait(10)
+        self.driver.implicitly_wait(30)
 
     def test_normal_signin(self):
         """ Test SignInNormal checks normal sign in with valid credentials """

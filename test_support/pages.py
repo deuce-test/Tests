@@ -46,10 +46,6 @@ class BasePage(object):
 class MainPage(BasePage):
     """Home page action methods come here."""
 
-    def get_page(self):
-        """Opens main page"""
-        self.driver.get("https://news360.com/")
-
     def click_signin_link(self):
         super(MainPage, self).click_element(*MainPageLocators.SIGNIN_LINK)
 
