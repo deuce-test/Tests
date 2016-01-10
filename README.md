@@ -5,9 +5,9 @@ This project consists of set of Selenium auto tests written for checking the mai
 ## Requirements and how to run tests
 
 The test are written in Python, so Python 2.7.* is required to run it. In order to do it effectively the following packages are required: **selenium** and **selenose**.
-So the next steps will provide the fastest way to run the tests:
+Therefore, the next steps will provide the fastest way to run the tests:
  1. Download the **Tests** folder somewhere on the disc and unzip it.
- 2. Install **pip** in case it wasn't installed previously.
+ 2. Install **pip** in case it was not installed previously.
  3. Execute ```pip install selenium selenose```
  4. Execute ```cd /path/to/folder/Tests```
  5. Run the tests using the following command: ```nosetests -w ./ -v``` (Option -w is followed by the path to folder there Nose should search for tests. Option -v adds docstring of the main test method to log thus making log more readable)
@@ -37,6 +37,6 @@ For instance, on the virtual server with 1 CPU running 2 streams of tests saved 
 
 ## Test implementation details
 
-First of all, tests are developed in a way so that they can be executed absolutely independently both as a part of the set and individually. Secondly, they are implemented with the Page Object pattern in mind in order to improve maintainability and despite its minor violations already introduced in code, further development should also follow this pattern.
+First, tests are developed in a way so that they can be executed absolutely independently both as a part of the set and individually. Secondly, they are implemented with the Page Object pattern in mind in order to improve maintainability and despite its minor violations already introduced in code, further development also should follow this pattern.
 In **test_support** package you may find files *locators.py* and *pages.py* that provide list of used locators and actions available on pages involved in tests.
-Also, please pay attention to the test filename pattern - in order to be discoverable by Nose, framework title of these files must be started with "Test". The same approach is used in naming of the main method of each test - it is started with "test_" in order to allow showing test docstring in the output log.
+In addition, please pay attention to the test filename pattern - in order to be discoverable by Nose, framework title of these files must be started with "Test". The same approach is used in naming of the main method of each test - it is started with "test_" in order to allow showing test docstring in the output log.
