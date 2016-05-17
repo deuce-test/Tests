@@ -1,6 +1,6 @@
 # Instruction on how to use these tests
 
-This project consists of set of Selenium auto tests written for checking the main features of [News360](https://news360.com) login and sign up functionality.
+This project consists of set of Selenium auto tests written as a part of a [test assignment](https://docs.google.com/document/d/1O9JckI3mcFP1og-YrLL46Rp5VsFXZs81DALwZWv6_48/edit). The purpose of tests is checking the main features of [News360](https://news360.com) "sign in with email" and "sign up with email" functionality.
 
 ## Requirements and how to run tests
 
