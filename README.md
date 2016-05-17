@@ -4,7 +4,7 @@ This project consists of set of Selenium auto tests written as a part of a [test
 
 ## Requirements and how to run tests
 
-The test are written in Python, so Python 2.7.* is required to run it. In order to do it effectively the following packages are required: **selenium** and **selenose**.
+The tests are written in Python, so Python 2.7.* is required to run it. In order to do it effectively the following packages are required: **selenium** and **selenose**.
 Therefore, the next steps will provide the fastest way to run the tests:
  1. Download the **Tests** folder somewhere on the disc and unzip it.
  2. Install **pip** in case it was not installed previously.
